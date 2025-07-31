@@ -121,16 +121,5 @@ college-carclinch-ai/
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file.
 
-## Maintainers and Contributors
-
-See the list of [contributors]() who participated in this project.
-
----
-
-_For system diagrams, implementation details, and API references, see the `/docs` or relevant subdirectories._
-
 ```
 
-Copy this content into a file named `README.md` at the root of your repository. Adjust sections like technology stack, folder descriptions, and setup instructions to reflect your actual implementation. This README will give new users (and contributors) a strong starting point to understand and use your project.
-
-[1] https://github.com/lajak/college-carclinch-ai
