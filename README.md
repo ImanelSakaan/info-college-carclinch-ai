@@ -271,17 +271,6 @@ college-carclinch-ai/
   Container definitions to build and run the app using Docker, simplifying deployment.
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## Installation
 
 1. **Clone the Repository**
