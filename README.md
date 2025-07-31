@@ -195,5 +195,40 @@ college-carclinch-ai/
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file.
 
-```
+---
+## flowchart TD
+  %% User Interaction
+  User[User: Customer Portal] -->|Browse cars, preferences| Frontend[Frontend React App]
 
+  %% Frontend to Backend Communication
+  Frontend -->|API Requests| Backend[Backend API Server]
+
+  %% Backend API Endpoints
+  Backend --> CarsAPI[Cars API: CRUD operations]
+  Backend --> UsersAPI[Users API: Auth & Profile]
+  Backend --> RecAPI[Recommendations API]
+
+  %% Backend to Database
+  CarsAPI --> DB[(Database: Inventory & User Data)]
+  UsersAPI --> DB
+  RecAPI --> DB
+
+  %% AI/ML Model Integration
+  RecAPI --> MLModel[Machine Learning Model: Recommendation Engine]
+  MLModel --> RecAPI
+
+  %% Backend Responds Back to Frontend
+  Backend --> Frontend
+
+  %% Dealer Dashboard Interaction
+  DealerUI[Dealer Dashboard UI] -->|API Requests| Backend
+
+  %% Data Loading and Updates
+  DataSeed[Data Seeding & Updates (seed.py)] --> DB
+
+  %% DevOps Pipeline (Optional)
+  GitHub[GitHub Repo] --> CICD[CI/CD Pipeline]
+  CICD --> Deployment[Deployment: Docker/Docker Compose]
+
+  Deployment --> Frontend
+  Deployment --> Backend
