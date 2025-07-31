@@ -1,5 +1,7 @@
 # College CarClinch AI
 
+AI-powered Car Recommendation and Dealership Management System
+
 ## System Architecture
 
 The following diagram shows the high-level architecture of our AI-powered car recommendation system:
@@ -172,34 +174,6 @@ graph TB
 - **💾 Data Storage**: Multi-database architecture for different data types
 - **🔌 External APIs**: Integration with third-party services
 - **📈 Infrastructure**: Comprehensive monitoring and DevOps tools
-
-### Key Features:
-
-- **Intelligent Car Recommendations** using ML algorithms
-- **Price Prediction Models** for accurate market analysis
-- **Image Recognition** for automated car classification
-- **Real-time Data Processing** with streaming capabilities
-- **Scalable Microservices** architecture
-- **Comprehensive Monitoring** and logging
-
-For detailed documentation, please refer to our [project documentation](./docs/).
-# College CarClinch AI
-
-AI-powered Car Recommendation and Dealership Management System
-
----
-
-## Overview
-
-**College CarClinch AI** is a modern, full-stack web application that leverages artificial intelligence to streamline car dealership operations and enhance the car-buying experience. The platform provides personalized car recommendations for customers, a robust dashboard for dealers, and seamless integration with external services.
-
-## Features
-
-- **AI-Powered Car Recommendations**: Suggests vehicles based on user preferences, inventory, and historical data.
-- **Dealer Dashboard**: Manage listings, review analytics, and handle customer leads.
-- **Customer Portal**: Easy-to-use portal for browsing, comparing, and favoriting vehicles.
-- **Inventory Management**: Tools for adding, editing, and removing vehicles.
-- **Data Integrations**: Syncs with external automotive data sources.
 
 ## 1. Detailed Overview of Project Structure 
 
