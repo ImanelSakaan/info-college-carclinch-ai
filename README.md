@@ -17,7 +17,7 @@ AI-powered Car Recommendation and Dealership Management System
 - **Inventory Management**: Tools for adding, editing, and removing vehicles.
 - **Data Integrations**: Syncs with external automotive data sources.
 
-## Project Structure
+## 1. Detailed Overview of Project Structure 
 
 ```
 college-carclinch-ai/
@@ -49,6 +49,80 @@ college-carclinch-ai/
 - **data/**: Sample data files and scripts for seeding/testing.
 - **scripts/**: Setup and management scripts.
 - **Dockerfile/docker-compose.yml**: Containerization for easy deployment.
+
+## 2. Folder & File Explanations
+
+### Root
+
+- **README.md**  
+  Project introduction, setup instructions, and usage examples.
+- **.gitignore**  
+  Specifies files/folders for Git to ignore (logs, `node_modules`, compiled files, etc.).
+
+### backend/
+
+- **app.py**  
+  Main entry point for the backend server (Flask/FastAPI/Express).
+- **requirements.txt**  
+  Python dependencies (Flask, scikit-learn, etc.).
+- **models/**  
+  Trained machine learning models (e.g., `recommendation_model.pkl`).
+- **routes/**  
+  API endpoint definitions:
+  - **cars.py**: Handles car listing, adding, updating, deleting, etc.
+  - **users.py**: Handles registration, login, user profiles.
+  - **recommendations.py**: Handles AI-driven car recommendations.
+- **database/**
+  - **db_setup.py**: Code to initialize/connect to DB, run migrations/seeding.
+- **utils/**
+  - **helpers.py**: Utility functions, data validators, shared logic.
+
+### frontend/
+
+- **package.json**  
+  Frontend dependencies (React, etc.).
+- **public/index.html**  
+  Main HTML file loaded by React.
+- **src/index.js**  
+  Root JavaScript entry point; renders the App.
+- **src/App.js**  
+  Main React application component.
+- **src/components/**
+  - **CarList.jsx**: Displays car listings.
+  - **RecommendationPanel.jsx**: Shows recommended cars.
+  - **DealerDashboard.jsx**: Dealer features, stats, and controls.
+- **src/pages/**
+  - **Home.js**: Landing page.
+  - **Profile.js**: User account page.
+
+### data/
+
+- **cars_sample.csv**  
+  Example car inventory dataset.
+- **seed.py**  
+  Script to load sample data into the database.
+
+### scripts/
+
+- **setup.sh**  
+  Shell script for automating setup, installation, or cleanup tasks.
+
+### Docker & Deployment
+
+- **Dockerfile / docker-compose.yml**  
+  Container definitions to build and run the app using Docker, simplifying deployment.
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Installation
 
